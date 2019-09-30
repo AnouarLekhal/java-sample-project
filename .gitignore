@@ -1,0 +1,11 @@
+# Compiled class file
+*.class
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.iml
+
+# Other folders
+/out
