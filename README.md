@@ -1,9 +1,9 @@
 # Java Sample Project
 ```
-This is a project that includes examples written in java for reuse in other concrete projects.
+This project includes Java examples for reuse in others concrete projects.
 ```
 
-# This project covers the following items :
+## This project covers the following items :
 * Lambda Expression
 * Functional Interface
 * Method References

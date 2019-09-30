@@ -15,7 +15,7 @@ public class StreamBoxed {
         //Compilation Error !!
         //List<Integer> ints = IntStream.of(1,2,3,4,5).collect(Collectors.toList());
 
-        //Get the collection and later convert to stream to process elements
+        //Get the collection and later it convert to stream to process elements
         List<Integer> ints = IntStream.of(1, 2, 3, 4, 5)
                 .boxed()
                 .collect(Collectors.toList());

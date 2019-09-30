@@ -25,10 +25,10 @@ public class LambdaExample {
         /*
         * ================================================================================================================
         *
-        * The following are the basic functional interface given by the JVM since the version 1.8
+        * The following are the basic functional interfaces given by the JVM since version 1.8
         *
-        * There are more functional interface in the package java.util.function such as BiFunction, BiCusumer, and others.
-        * Also Java API has many one-method interfaces such as Runnable, Callable, Comparator, ActionListener, and others.
+        * There is more functional interface in the package java.util.function such as BiFunction, BiCusumer, and others.
+        * Also, Java API has many one-method interfaces such as Runnable, Callable, Comparator, ActionListener, and others.
         *
         * ================================================================================================================
         * */
@@ -41,7 +41,7 @@ public class LambdaExample {
 
         Callable a;
         /*
-        * A Predicate is one such function accepting a single argument to evaluate to a boolean result.
+        * Predicate is one such function accepting a single argument to evaluate to a boolean result.
         * Predicate interface contains exactly one abstract method test(T t)
         * */
         Predicate<Person> predicate = (Person p) -> p.getAge() > 30;
@@ -72,7 +72,7 @@ public class LambdaExample {
 
         System.out.println("============");
 
-        // Display persons details
+        // Display person details
         persons.stream().map(x -> function.apply(x)).forEach(System.out::println);
 
         System.out.println("============");
@@ -82,7 +82,7 @@ public class LambdaExample {
 
         System.out.println("============");
 
-        // Add +1 of age person
+        // Add 1 years of each person
         for (Person person : persons) {
             consumer.accept(person);
         }
@@ -95,7 +95,7 @@ public class LambdaExample {
         Comparator<Person> comparator = Comparator.comparing(Person::getAge);
         Collections.sort(persons, comparator);
 
-        // Display persons details after the sort
+        // Display person details after the sort
         persons.stream().map(x -> function.apply(x)).forEach(System.out::println);
     }
 }

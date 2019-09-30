@@ -20,7 +20,7 @@ public class StreamOfArray {
         System.out.println("============");
 
         // --------- Using Stream.of() ---------
-        // Rq : Stream.of() method simply calls the Arrays.stream() method for non-primitive types.
+        // NB : Stream.of() method simply calls the Arrays.stream() method for non-primitive types.
         Stream<Integer> stream2 = Stream.of(array1);
         stream2.forEach(System.out::println);
 
